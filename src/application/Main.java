@@ -15,10 +15,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
-			ScrollPane scrollPane = loader.load();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml")); /* Iniciar a aplicação nessa view */
+			ScrollPane scrollPane = loader.load(); /* Carregar a view */
 			
-			scrollPane.setFitToHeight(true);
+			scrollPane.setFitToHeight(true); /* Ajustar dimensões da view com a janela */
 			scrollPane.setFitToWidth(true);
 			
 			mainScene = new Scene(scrollPane);
